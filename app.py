@@ -17,8 +17,12 @@ def load_model():
     model_path = 'plant_disease_model.h5'
     if not os.path.exists(model_path):
         file_id = '1CeYtagcTsqnAWyKRaBO_43uG32bkgMKA'
-        url = f'https://drive.google.com/uc?id={file_id}'
-        gdown.download(url, model_path, quiet=False)
+        gdown.download(
+            id=file_id,
+            output=model_path,
+            quiet=False,
+            fuzzy=True
+        )
     model = tf.keras.models.load_model(model_path)
     return model
 
