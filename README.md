@@ -3,6 +3,9 @@
 A deep learning web app that detects plant diseases
 from leaf images using CNN and TensorFlow.
 
+## 🚀 Live Demo
+👉 https://plant-disease-detector-csiasfz8oqfappj7d36tfed.streamlit.app
+
 ## 🎯 Features
 - Detects 38 different plant diseases
 - 98.65% validation accuracy
